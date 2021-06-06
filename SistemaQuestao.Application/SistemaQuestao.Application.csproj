@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Queries\Area\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\SistemaQuestao.Core\SistemaQuestao.Core.csproj" />
+    <ProjectReference Include="..\SistemaQuestao.Infrastructure\SistemaQuestao.Infrastructure.csproj" />
+  </ItemGroup>
+
+</Project>

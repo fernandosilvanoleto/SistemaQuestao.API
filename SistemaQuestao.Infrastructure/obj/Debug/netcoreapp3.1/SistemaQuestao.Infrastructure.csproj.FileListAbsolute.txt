@@ -1,0 +1,15 @@
+D:\apps\asp_net\SistemaQuestao\SistemaQuestao.API\SistemaQuestao.Infrastructure\bin\Debug\netcoreapp3.1\SistemaQuestao.Core.dll
+D:\apps\asp_net\SistemaQuestao\SistemaQuestao.API\SistemaQuestao.Infrastructure\obj\Debug\netcoreapp3.1\SistemaQuestao.Infrastructure.csprojAssemblyReference.cache
+D:\apps\asp_net\SistemaQuestao\SistemaQuestao.API\SistemaQuestao.Infrastructure\obj\Debug\netcoreapp3.1\SistemaQuestao.Infrastructure.AssemblyInfoInputs.cache
+D:\apps\asp_net\SistemaQuestao\SistemaQuestao.API\SistemaQuestao.Infrastructure\obj\Debug\netcoreapp3.1\SistemaQuestao.Infrastructure.AssemblyInfo.cs
+D:\apps\asp_net\SistemaQuestao\SistemaQuestao.API\SistemaQuestao.Infrastructure\obj\Debug\netcoreapp3.1\SistemaQuestao.Infrastructure.csproj.CoreCompileInputs.cache
+D:\apps\asp_net\SistemaQuestao\SistemaQuestao.API\SistemaQuestao.Infrastructure\bin\Debug\netcoreapp3.1\SistemaQuestao.Infrastructure.deps.json
+D:\apps\asp_net\SistemaQuestao\SistemaQuestao.API\SistemaQuestao.Infrastructure\bin\Debug\netcoreapp3.1\SistemaQuestao.Infrastructure.dll
+D:\apps\asp_net\SistemaQuestao\SistemaQuestao.API\SistemaQuestao.Infrastructure\bin\Debug\netcoreapp3.1\SistemaQuestao.Infrastructure.pdb
+D:\apps\asp_net\SistemaQuestao\SistemaQuestao.API\SistemaQuestao.Infrastructure\bin\Debug\netcoreapp3.1\SistemaQuestao.Core.pdb
+D:\apps\asp_net\SistemaQuestao\SistemaQuestao.API\SistemaQuestao.Infrastructure\obj\Debug\netcoreapp3.1\SistemaQuestao.Infrastructure.csproj.CopyComplete
+D:\apps\asp_net\SistemaQuestao\SistemaQuestao.API\SistemaQuestao.Infrastructure\obj\Debug\netcoreapp3.1\SistemaQuestao.Infrastructure.dll
+D:\apps\asp_net\SistemaQuestao\SistemaQuestao.API\SistemaQuestao.Infrastructure\obj\Debug\netcoreapp3.1\SistemaQuestao.Infrastructure.pdb
+D:\apps\asp_net\SistemaQuestao\SistemaQuestao.API\SistemaQuestao.Infrastructure\bin\Debug\netcoreapp3.1\SistemaQuestao.Infrastructure.runtimeconfig.json
+D:\apps\asp_net\SistemaQuestao\SistemaQuestao.API\SistemaQuestao.Infrastructure\bin\Debug\netcoreapp3.1\SistemaQuestao.Infrastructure.runtimeconfig.dev.json
+D:\apps\asp_net\SistemaQuestao\SistemaQuestao.API\SistemaQuestao.Infrastructure\obj\Debug\netcoreapp3.1\SistemaQuestao.Infrastructure.genruntimeconfig.cache

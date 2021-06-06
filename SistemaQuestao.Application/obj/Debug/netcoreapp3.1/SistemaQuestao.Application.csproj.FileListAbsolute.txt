@@ -1,0 +1,14 @@
+D:\apps\asp_net\SistemaQuestao\SistemaQuestao.API\SistemaQuestao.Application\obj\Debug\netcoreapp3.1\SistemaQuestao.Application.csprojAssemblyReference.cache
+D:\apps\asp_net\SistemaQuestao\SistemaQuestao.API\SistemaQuestao.Application\obj\Debug\netcoreapp3.1\SistemaQuestao.Application.AssemblyInfoInputs.cache
+D:\apps\asp_net\SistemaQuestao\SistemaQuestao.API\SistemaQuestao.Application\obj\Debug\netcoreapp3.1\SistemaQuestao.Application.AssemblyInfo.cs
+D:\apps\asp_net\SistemaQuestao\SistemaQuestao.API\SistemaQuestao.Application\obj\Debug\netcoreapp3.1\SistemaQuestao.Application.csproj.CoreCompileInputs.cache
+D:\apps\asp_net\SistemaQuestao\SistemaQuestao.API\SistemaQuestao.Application\bin\Debug\netcoreapp3.1\SistemaQuestao.Application.deps.json
+D:\apps\asp_net\SistemaQuestao\SistemaQuestao.API\SistemaQuestao.Application\bin\Debug\netcoreapp3.1\SistemaQuestao.Application.dll
+D:\apps\asp_net\SistemaQuestao\SistemaQuestao.API\SistemaQuestao.Application\bin\Debug\netcoreapp3.1\SistemaQuestao.Application.pdb
+D:\apps\asp_net\SistemaQuestao\SistemaQuestao.API\SistemaQuestao.Application\bin\Debug\netcoreapp3.1\SistemaQuestao.Core.dll
+D:\apps\asp_net\SistemaQuestao\SistemaQuestao.API\SistemaQuestao.Application\bin\Debug\netcoreapp3.1\SistemaQuestao.Infrastructure.dll
+D:\apps\asp_net\SistemaQuestao\SistemaQuestao.API\SistemaQuestao.Application\bin\Debug\netcoreapp3.1\SistemaQuestao.Core.pdb
+D:\apps\asp_net\SistemaQuestao\SistemaQuestao.API\SistemaQuestao.Application\bin\Debug\netcoreapp3.1\SistemaQuestao.Infrastructure.pdb
+D:\apps\asp_net\SistemaQuestao\SistemaQuestao.API\SistemaQuestao.Application\obj\Debug\netcoreapp3.1\SistemaQuestao.Application.csproj.CopyComplete
+D:\apps\asp_net\SistemaQuestao\SistemaQuestao.API\SistemaQuestao.Application\obj\Debug\netcoreapp3.1\SistemaQuestao.Application.dll
+D:\apps\asp_net\SistemaQuestao\SistemaQuestao.API\SistemaQuestao.Application\obj\Debug\netcoreapp3.1\SistemaQuestao.Application.pdb
