@@ -37,6 +37,7 @@ namespace SistemaQuestao.API
             services.AddScoped<IAreaInterface, AreaService>();
             services.AddScoped<IDisciplinaInterface, DisciplinaService>();
             services.AddScoped<IAreaDisciplinaInterface, AreaDisciplinaService>();
+            services.AddScoped<IAssuntoInterface, AssuntoService>();
 
             services.AddControllers();
             services.AddSwaggerGen(c =>

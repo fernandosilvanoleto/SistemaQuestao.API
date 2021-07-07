@@ -50,5 +50,23 @@ namespace SistemaQuestao.Core.Entities
                 this.Observacao = observacao;
             }
         }
+
+        public void UpdateAssuntoPaiRelacionada(int idAssuntoPai)
+        {
+            if (idAssuntoPai != 0)
+            {
+                this.IdAssuntoPai = idAssuntoPai;
+            }
+        }
+
+        public string GetNomeAssuntoPai()
+        {
+            // AQUI FAÇO O TRATAMENTO CORRETO
+            if (AssuntoPai == null)
+            {
+                return "";
+            }
+            return AssuntoPai.Descricao;            
+        }
     }
 }

@@ -74,7 +74,7 @@ namespace SistemaQuestao.Application.Services.Repositories
                         assunto.Observacao,
                         assunto.Status,
                         assunto.Disciplina.Nome,
-                        assunto.AssuntoPai.Descricao
+                        assunto.GetNomeAssuntoPai()
                     );
 
                 return getAssuntoByIdViewModel;
@@ -85,17 +85,21 @@ namespace SistemaQuestao.Application.Services.Repositories
             }
         }
 
-        public void UpdateAdicionarAssuntoPai(UpdateAdicionarAssuntoPaiInputModel inputModel)
+        public int UpdateAdicionarAssuntoPai(UpdateAdicionarAssuntoPaiInputModel inputModel)
         {
             try
             {
                 var assunto = _dbContext.Assuntos.SingleOrDefault(a => a.Id == inputModel.Id);
 
                 assunto.AdicionarAssuntoPaiById(inputModel.IdAssuntoPai);
+
+                _dbContext.SaveChanges();
+
+                return assunto.Id;
             }
             catch (Exception)
             {
-                throw new System.NotImplementedException();
+                return -1;
             }
         }
 
@@ -107,7 +111,26 @@ namespace SistemaQuestao.Application.Services.Repositories
 
                 assunto.Update(inputModel.Descricao, inputModel.Observacao);
 
+                _dbContext.SaveChanges();
+
                 return assunto.Id;                
+            }
+            catch (Exception)
+            {
+                return -1;
+            }
+        }
+
+        // MÉTODO DESATIVADO POR ENQUANTO
+        public int UpdateAssuntoPaiRelacionada(UpdateDisciplinaRelacionadaInputModel inputModel)
+        {
+            try
+            {
+                var assunto = _dbContext.Assuntos.SingleOrDefault(a => a.Id == inputModel.Id);
+
+                assunto.UpdateAssuntoPaiRelacionada(inputModel.IdAssuntoPai);
+
+                return assunto.Id;
             }
             catch (Exception)
             {

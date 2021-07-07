@@ -53,6 +53,28 @@ namespace SistemaQuestao.API.Controllers
             }
         }
 
+        [HttpGet]
+        [Route("getAssuntosPorDisciplina/{id:int}")]
+        public IActionResult GetAssuntosPorDisciplina(int id)
+        {
+            try
+            {
+                var disciplinas = _disciplinaInterface.GetAssuntosPorDisciplina(id);
+
+                if (disciplinas == null)
+                {
+                    return NoContent();
+                }
+
+                return Ok(disciplinas);
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+        }
+
         [HttpPost]
         public IActionResult Post([FromBody] CreateDisciplinaInputModel inputModel)
         {

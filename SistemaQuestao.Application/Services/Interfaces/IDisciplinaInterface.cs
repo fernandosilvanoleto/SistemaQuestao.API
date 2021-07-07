@@ -12,5 +12,6 @@ namespace SistemaQuestao.Application.Services.Interfaces
         GetDisciplinaByIdViewModel GetByIdDisciplina(int id);
         int CreateDisciplina(CreateDisciplinaInputModel inputModel);
         void UpdateDisciplina(UpdateDisciplinaInputModel inputModel);
+        List<GetAssuntosPorDisciplinaViewModel> GetAssuntosPorDisciplina(int id);
     }
 }

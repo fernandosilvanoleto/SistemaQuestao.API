@@ -12,6 +12,6 @@ namespace SistemaQuestao.Application.Services.Interfaces
         GetAssuntoByIdViewModel GetByIdAssunto(int id);
         int CreateAssunto(CreateAssuntoInputModel inputModel);
         int UpdateAssunto(UpdateAssuntoInputModel inputModel);
-        void UpdateAdicionarAssuntoPai(UpdateAdicionarAssuntoPaiInputModel inputModel);
+        int UpdateAdicionarAssuntoPai(UpdateAdicionarAssuntoPaiInputModel inputModel);
     }
 }

@@ -1,4 +1,5 @@
-﻿using SistemaQuestao.Application.InputModels.Disciplina;
+﻿using Microsoft.EntityFrameworkCore;
+using SistemaQuestao.Application.InputModels.Disciplina;
 using SistemaQuestao.Application.Services.Interfaces;
 using SistemaQuestao.Application.ViewModels.Disciplina;
 using SistemaQuestao.Core.Entities;
@@ -44,6 +45,32 @@ namespace SistemaQuestao.Application.Services.Repositories
                 .ToList();
 
                 return GetDisciplinaAllViewModel;
+            }
+            catch (Exception)
+            {
+                throw new System.NotImplementedException();
+            }
+        }
+
+        public List<GetAssuntosPorDisciplinaViewModel> GetAssuntosPorDisciplina(int id)
+        {
+            try
+            {
+                var assuntosByDisciplina = _dbContext.Assuntos;
+
+                var getAssuntosPorDisciplinaViewModel = assuntosByDisciplina
+                    .Include(disc => disc.Disciplina)
+                    .Where(assDisc => assDisc.IdDisciplina == id)
+                    .Select(assDisc => new GetAssuntosPorDisciplinaViewModel(
+                        assDisc.Disciplina.Id, 
+                        assDisc.Disciplina.Nome, 
+                        assDisc.Descricao, 
+                        assDisc.Observacao, 
+                        assDisc.Status, 
+                        assDisc.AssuntoPai.Descricao))
+                    .ToList();
+
+                return getAssuntosPorDisciplinaViewModel;
             }
             catch (Exception)
             {

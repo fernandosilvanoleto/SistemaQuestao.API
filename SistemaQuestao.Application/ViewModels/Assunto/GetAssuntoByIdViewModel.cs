@@ -7,7 +7,7 @@ namespace SistemaQuestao.Application.ViewModels.Assunto
 {
     public class GetAssuntoByIdViewModel
     {
-        public GetAssuntoByIdViewModel(string descricao, string observacao, AssuntoEnum status, string disciplina, string assuntoPai)
+        public GetAssuntoByIdViewModel(string descricao, string observacao, AssuntoEnum status, string disciplina, string? assuntoPai)
         {
             Descricao = descricao;
             Observacao = observacao;
@@ -21,7 +21,7 @@ namespace SistemaQuestao.Application.ViewModels.Assunto
         public string? Observacao { get; private set; }
         public string Status { get; private set; }
         public string Disciplina { get; private set; }
-        public string AssuntoPai { get; set; }
+        public string? AssuntoPai { get; set; }
 
     }
 }
