@@ -24,6 +24,7 @@ namespace SistemaQuestao.Core.Entities
         [Display(Name = "Status")]
         public AreaDisciplinaEnum StatusAreaDisciplina { get; private set; }
 
+
         // MÉTODOS
         public void ExcluirAreaDisciplina()
         {

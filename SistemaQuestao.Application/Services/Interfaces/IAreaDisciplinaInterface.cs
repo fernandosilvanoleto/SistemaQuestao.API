@@ -10,5 +10,7 @@ namespace SistemaQuestao.Application.Services.Interfaces
         int CreateDisciplina(CreateAreaDisciplinaInputModel inputModel);
         int? DeleteAreaDisciplinaModel(int id);
         int? ActiveAreaDisciplinaModel(int id);
+        List<GetDisciplinasPorAreaEspecificViewModel> GetDisciplinasPorAreaEspecific(int idArea);
+
     }
 }

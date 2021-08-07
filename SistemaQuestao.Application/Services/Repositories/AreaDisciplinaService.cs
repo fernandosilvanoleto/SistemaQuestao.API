@@ -121,5 +121,39 @@ namespace SistemaQuestao.Application.Services.Repositories
                 throw new System.NotImplementedException();
             }            
         }
+
+        public List<GetDisciplinasPorAreaEspecificViewModel> GetDisciplinasPorAreaEspecific(int idArea)
+        {
+            try
+            {
+                // FALTA TESTAR AGORA
+                var area_disciplinas = _dbContext.AreaDisciplinas;
+
+                if (area_disciplinas == null)
+                    return null;
+
+                var getDisciplinasPorAreaEspecifics = area_disciplinas
+                    .Include(a => a.Area)
+                    .Include(d => d.Disciplina)
+                    .Where(ad => ad.IdArea == idArea)
+                    .Select(area_disciplina => new GetDisciplinasPorAreaEspecificViewModel(
+                       area_disciplina.Id,
+                       area_disciplina.IdArea,
+                       area_disciplina.Area.Nome,
+                       area_disciplina.Area.Descricao,
+                       area_disciplina.IdDisciplina,
+                       area_disciplina.Disciplina.Nome,
+                       area_disciplina.Disciplina.Complemento,
+                       area_disciplina.StatusAreaDisciplina
+                     ))
+                    .ToList();
+
+                return getDisciplinasPorAreaEspecifics;
+            }
+            catch (System.Exception)
+            {
+                throw new System.NotImplementedException();
+            }
+        }
     }
 }

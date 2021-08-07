@@ -8,6 +8,10 @@ namespace SistemaQuestao.Infrastructure.Persistence
 {
     public class SistemaQuestaoDbContext : DbContext
     {
+        public SistemaQuestaoDbContext()
+        {
+        }
+
         public SistemaQuestaoDbContext(DbContextOptions<SistemaQuestaoDbContext> options) : base(options)
         {
 

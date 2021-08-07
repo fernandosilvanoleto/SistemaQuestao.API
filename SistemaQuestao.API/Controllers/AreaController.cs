@@ -8,9 +8,11 @@ namespace SistemaQuestao.API.Controllers
     public class AreaController : ControllerBase
     {
         private readonly IAreaInterface _areaInterface;
-        public AreaController(IAreaInterface areaInterface)
+        private readonly IAreaDisciplinaInterface _areaDisciplinaInterface;
+        public AreaController(IAreaInterface areaInterface, IAreaDisciplinaInterface areaDisciplinaInterface)
         {
             _areaInterface = areaInterface;
+            _areaDisciplinaInterface = areaDisciplinaInterface;
         }
 
         [HttpGet]
@@ -53,6 +55,20 @@ namespace SistemaQuestao.API.Controllers
             _areaInterface.UpdateArea(inputModel);
 
             return Ok();
+        }
+
+        [HttpGet]
+        [Route("getdisciplinaporarea/{id:int}")]
+        public IActionResult GetDisciplinasPorAreaEspecific(int id)
+        {
+            var areadisciplina = _areaDisciplinaInterface.GetDisciplinasPorAreaEspecific(id);
+
+            if (areadisciplina == null)
+            {
+                return Ok("Area não tem disciplinas vinculadas. Por favor, confere novamente os dados!");
+            }
+
+            return Ok(areadisciplina);
         }
     }
 }
